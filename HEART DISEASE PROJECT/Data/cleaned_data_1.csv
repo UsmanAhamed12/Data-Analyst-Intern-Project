@@ -1,0 +1,165 @@
+age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,resting_electrocardiogram,max_heart_rate_achieved,exercise_induced_angina,st_depression,st_slope,num_major_vessels,thalassemia,target
+58,Female,typical angina,100,248,lower then 120mg/ml,normal,122,no,1.0,flat,0,normal,1
+71,Female,typical angina,112,149,lower then 120mg/ml,ST-T wave abnormality,125,no,1.6,flat,0,normal,1
+34,Female,atypical angina,118,210,lower then 120mg/ml,ST-T wave abnormality,192,no,0.7,downsloping,0,normal,1
+51,Female,non-anginal pain,140,308,lower then 120mg/ml,normal,142,no,1.5,downsloping,1,normal,1
+50,Female,atypical angina,120,244,lower then 120mg/ml,ST-T wave abnormality,162,no,1.1,downsloping,0,normal,1
+58,Male,non-anginal pain,140,211,heigher then 120mg/ml,normal,165,no,0.0,downsloping,0,normal,1
+67,Female,typical angina,106,223,lower then 120mg/ml,ST-T wave abnormality,142,no,0.3,downsloping,2,normal,1
+45,Male,typical angina,104,208,lower then 120mg/ml,normal,148,yes,3.0,flat,0,normal,1
+63,Female,non-anginal pain,135,252,lower then 120mg/ml,normal,172,no,0.0,downsloping,0,normal,1
+42,Female,non-anginal pain,120,209,lower then 120mg/ml,ST-T wave abnormality,173,no,0.0,flat,0,normal,1
+44,Male,non-anginal pain,130,233,lower then 120mg/ml,ST-T wave abnormality,179,yes,0.4,downsloping,0,normal,1
+50,Male,non-anginal pain,129,196,lower then 120mg/ml,ST-T wave abnormality,163,no,0.0,downsloping,0,normal,1
+51,Male,asymptomatic,125,213,lower then 120mg/ml,normal,125,yes,1.4,downsloping,1,normal,1
+59,Male,typical angina,138,271,lower then 120mg/ml,normal,182,no,0.0,downsloping,0,normal,1
+64,Male,typical angina,128,263,lower then 120mg/ml,ST-T wave abnormality,105,yes,0.2,flat,1,reversable defect,1
+65,Female,non-anginal pain,160,360,lower then 120mg/ml,normal,151,no,0.8,downsloping,0,normal,1
+54,Male,non-anginal pain,120,258,lower then 120mg/ml,normal,147,no,0.4,flat,0,reversable defect,1
+55,Female,atypical angina,132,342,lower then 120mg/ml,ST-T wave abnormality,166,no,1.2,downsloping,0,normal,1
+42,Male,typical angina,140,226,lower then 120mg/ml,ST-T wave abnormality,178,no,0.0,downsloping,0,normal,1
+41,Male,atypical angina,135,203,lower then 120mg/ml,ST-T wave abnormality,132,no,0.0,flat,0,fixed defect,1
+66,Female,non-anginal pain,146,278,lower then 120mg/ml,normal,152,no,0.0,flat,1,normal,1
+58,Female,asymptomatic,150,283,heigher then 120mg/ml,normal,162,no,1.0,downsloping,0,normal,1
+38,Male,non-anginal pain,138,175,lower then 120mg/ml,ST-T wave abnormality,173,no,0.0,downsloping,4,normal,1
+56,Male,asymptomatic,120,193,lower then 120mg/ml,normal,162,no,1.9,flat,0,reversable defect,1
+48,Male,atypical angina,130,245,lower then 120mg/ml,normal,180,no,0.2,flat,0,normal,1
+29,Male,atypical angina,130,204,lower then 120mg/ml,normal,202,no,0.0,downsloping,0,normal,1
+59,Male,non-anginal pain,150,212,heigher then 120mg/ml,ST-T wave abnormality,157,no,1.6,downsloping,0,normal,1
+53,Male,non-anginal pain,130,197,heigher then 120mg/ml,normal,152,no,1.2,upsloping,0,normal,1
+37,Female,non-anginal pain,120,215,lower then 120mg/ml,ST-T wave abnormality,170,no,0.0,downsloping,0,normal,1
+47,Male,non-anginal pain,138,257,lower then 120mg/ml,normal,156,no,0.0,downsloping,0,normal,1
+48,Male,non-anginal pain,124,255,heigher then 120mg/ml,ST-T wave abnormality,175,no,0.0,downsloping,2,normal,1
+52,Male,atypical angina,134,201,lower then 120mg/ml,ST-T wave abnormality,158,no,0.8,downsloping,1,normal,1
+44,Male,atypical angina,120,220,lower then 120mg/ml,ST-T wave abnormality,170,no,0.0,downsloping,0,normal,1
+54,Female,non-anginal pain,108,267,lower then 120mg/ml,normal,167,no,0.0,downsloping,0,normal,1
+62,Female,typical angina,124,209,lower then 120mg/ml,ST-T wave abnormality,163,no,0.0,downsloping,0,normal,1
+62,Male,atypical angina,128,208,heigher then 120mg/ml,normal,140,no,0.0,downsloping,0,normal,1
+45,Female,typical angina,138,236,lower then 120mg/ml,normal,152,yes,0.2,flat,0,normal,1
+57,Female,typical angina,128,303,lower then 120mg/ml,normal,159,no,0.0,downsloping,1,normal,1
+76,Female,non-anginal pain,140,197,lower then 120mg/ml,left ventricular hypertrophy,116,no,1.1,flat,0,normal,1
+43,Female,non-anginal pain,122,213,lower then 120mg/ml,ST-T wave abnormality,165,no,0.2,flat,0,normal,1
+57,Male,non-anginal pain,150,126,heigher then 120mg/ml,ST-T wave abnormality,173,no,0.2,downsloping,1,reversable defect,1
+54,Male,atypical angina,108,309,lower then 120mg/ml,ST-T wave abnormality,156,no,0.0,downsloping,0,reversable defect,1
+52,Male,asymptomatic,118,186,lower then 120mg/ml,normal,190,no,0.0,flat,0,fixed defect,1
+53,Male,typical angina,142,226,lower then 120mg/ml,normal,111,yes,0.0,downsloping,0,reversable defect,1
+42,Male,atypical angina,120,295,lower then 120mg/ml,ST-T wave abnormality,162,no,0.0,downsloping,0,normal,1
+65,Female,non-anginal pain,140,417,heigher then 120mg/ml,normal,157,no,0.8,downsloping,1,normal,1
+60,Female,asymptomatic,150,240,lower then 120mg/ml,ST-T wave abnormality,171,no,0.9,downsloping,0,normal,1
+66,Male,typical angina,120,302,lower then 120mg/ml,normal,151,no,0.4,flat,0,normal,1
+52,Male,non-anginal pain,138,223,lower then 120mg/ml,ST-T wave abnormality,169,no,0.0,downsloping,4,normal,1
+57,Male,typical angina,140,192,lower then 120mg/ml,ST-T wave abnormality,148,no,0.4,flat,0,fixed defect,1
+51,Female,non-anginal pain,130,256,lower then 120mg/ml,normal,149,no,0.5,downsloping,0,normal,1
+64,Female,typical angina,180,325,lower then 120mg/ml,ST-T wave abnormality,154,yes,0.0,downsloping,0,normal,1
+41,Male,atypical angina,110,235,lower then 120mg/ml,ST-T wave abnormality,153,no,0.0,downsloping,0,normal,1
+34,Male,asymptomatic,118,182,lower then 120mg/ml,normal,174,no,0.0,downsloping,0,normal,1
+47,Male,typical angina,112,204,lower then 120mg/ml,ST-T wave abnormality,143,no,0.1,downsloping,0,normal,1
+51,Female,non-anginal pain,120,295,lower then 120mg/ml,normal,157,no,0.6,downsloping,0,normal,1
+52,Male,asymptomatic,152,298,heigher then 120mg/ml,ST-T wave abnormality,178,no,1.2,flat,0,reversable defect,1
+39,Male,non-anginal pain,140,321,lower then 120mg/ml,normal,182,no,0.0,downsloping,0,normal,1
+40,Male,asymptomatic,140,199,lower then 120mg/ml,ST-T wave abnormality,178,yes,1.4,downsloping,0,reversable defect,1
+67,Female,non-anginal pain,115,564,lower then 120mg/ml,normal,160,no,1.6,flat,0,reversable defect,1
+41,Male,atypical angina,120,157,lower then 120mg/ml,ST-T wave abnormality,182,no,0.0,downsloping,0,normal,1
+51,Male,non-anginal pain,100,222,lower then 120mg/ml,ST-T wave abnormality,143,yes,1.2,flat,0,normal,1
+57,Female,typical angina,120,354,lower then 120mg/ml,ST-T wave abnormality,163,yes,0.6,downsloping,0,normal,1
+43,Male,non-anginal pain,130,315,lower then 120mg/ml,ST-T wave abnormality,162,no,1.9,downsloping,1,normal,1
+45,Female,atypical angina,112,160,lower then 120mg/ml,ST-T wave abnormality,138,no,0.0,flat,0,normal,1
+43,Male,typical angina,150,247,lower then 120mg/ml,ST-T wave abnormality,171,no,1.5,downsloping,0,normal,1
+56,Male,atypical angina,120,240,lower then 120mg/ml,ST-T wave abnormality,169,no,0.0,upsloping,0,normal,1
+39,Female,non-anginal pain,94,199,lower then 120mg/ml,ST-T wave abnormality,179,no,0.0,downsloping,0,normal,1
+64,Male,asymptomatic,110,211,lower then 120mg/ml,normal,144,yes,1.8,flat,0,normal,1
+42,Male,non-anginal pain,130,180,lower then 120mg/ml,ST-T wave abnormality,150,no,0.0,downsloping,0,normal,1
+45,Male,atypical angina,128,308,lower then 120mg/ml,normal,170,no,0.0,downsloping,0,normal,1
+41,Male,non-anginal pain,112,250,lower then 120mg/ml,ST-T wave abnormality,179,no,0.0,downsloping,0,normal,1
+56,Male,atypical angina,130,221,lower then 120mg/ml,normal,163,no,0.0,downsloping,0,reversable defect,1
+69,Male,asymptomatic,160,234,heigher then 120mg/ml,normal,131,no,0.1,flat,1,normal,1
+45,Male,typical angina,115,260,lower then 120mg/ml,normal,185,no,0.0,downsloping,0,normal,1
+60,Female,non-anginal pain,102,318,lower then 120mg/ml,ST-T wave abnormality,160,no,0.0,downsloping,1,normal,1
+64,Male,asymptomatic,170,227,lower then 120mg/ml,normal,155,no,0.6,flat,0,reversable defect,1
+42,Male,asymptomatic,148,244,lower then 120mg/ml,normal,178,no,0.8,downsloping,2,normal,1
+42,Male,non-anginal pain,120,240,heigher then 120mg/ml,ST-T wave abnormality,194,no,0.8,upsloping,0,reversable defect,1
+49,Male,atypical angina,130,266,lower then 120mg/ml,ST-T wave abnormality,171,no,0.6,downsloping,0,normal,1
+51,Male,typical angina,140,261,lower then 120mg/ml,normal,186,yes,0.0,downsloping,0,normal,1
+54,Male,non-anginal pain,150,232,lower then 120mg/ml,normal,165,no,1.6,downsloping,0,reversable defect,1
+44,Female,non-anginal pain,118,242,lower then 120mg/ml,ST-T wave abnormality,149,no,0.3,flat,1,normal,1
+52,Male,atypical angina,128,205,heigher then 120mg/ml,ST-T wave abnormality,184,no,0.0,downsloping,0,normal,1
+56,Male,atypical angina,120,236,lower then 120mg/ml,ST-T wave abnormality,178,no,0.8,downsloping,0,normal,1
+41,Female,atypical angina,126,306,lower then 120mg/ml,ST-T wave abnormality,163,no,0.0,downsloping,0,normal,1
+49,Female,typical angina,130,269,lower then 120mg/ml,ST-T wave abnormality,163,no,0.0,downsloping,0,normal,1
+54,Female,atypical angina,132,288,heigher then 120mg/ml,normal,159,yes,0.0,downsloping,1,normal,1
+51,Male,non-anginal pain,125,245,heigher then 120mg/ml,normal,166,no,2.4,flat,0,normal,1
+44,Male,atypical angina,130,219,lower then 120mg/ml,normal,188,no,0.0,downsloping,0,normal,1
+39,Female,non-anginal pain,138,220,lower then 120mg/ml,ST-T wave abnormality,152,no,0.0,flat,0,normal,1
+62,Female,typical angina,140,394,lower then 120mg/ml,normal,157,no,1.2,flat,0,normal,1
+35,Female,typical angina,138,183,lower then 120mg/ml,ST-T wave abnormality,182,no,1.4,downsloping,0,normal,1
+44,Male,non-anginal pain,120,226,lower then 120mg/ml,ST-T wave abnormality,169,no,0.0,downsloping,0,normal,1
+48,Male,typical angina,122,222,lower then 120mg/ml,normal,186,no,0.0,downsloping,0,normal,1
+71,Female,non-anginal pain,110,265,heigher then 120mg/ml,normal,130,no,0.0,downsloping,1,normal,1
+43,Male,typical angina,110,211,lower then 120mg/ml,ST-T wave abnormality,161,no,0.0,downsloping,0,reversable defect,1
+44,Male,atypical angina,120,263,lower then 120mg/ml,ST-T wave abnormality,173,no,0.0,downsloping,0,reversable defect,1
+66,Male,typical angina,160,228,lower then 120mg/ml,normal,138,no,2.3,downsloping,0,fixed defect,1
+57,Male,typical angina,132,207,lower then 120mg/ml,ST-T wave abnormality,168,yes,0.0,downsloping,0,reversable defect,1
+41,Female,atypical angina,105,198,lower then 120mg/ml,ST-T wave abnormality,168,no,0.0,downsloping,1,normal,1
+45,Female,atypical angina,130,234,lower then 120mg/ml,normal,175,no,0.6,flat,0,normal,1
+35,Male,atypical angina,122,192,lower then 120mg/ml,ST-T wave abnormality,174,no,0.0,downsloping,0,normal,1
+41,Female,atypical angina,130,204,lower then 120mg/ml,normal,172,no,1.4,downsloping,0,normal,1
+64,Female,non-anginal pain,140,313,lower then 120mg/ml,ST-T wave abnormality,133,no,0.2,downsloping,0,reversable defect,1
+71,Female,atypical angina,160,302,lower then 120mg/ml,ST-T wave abnormality,162,no,0.4,downsloping,2,normal,1
+58,Female,non-anginal pain,120,340,lower then 120mg/ml,ST-T wave abnormality,172,no,0.0,downsloping,0,normal,1
+61,Male,non-anginal pain,150,243,heigher then 120mg/ml,ST-T wave abnormality,137,yes,1.0,flat,0,normal,1
+52,Male,atypical angina,120,325,lower then 120mg/ml,ST-T wave abnormality,172,no,0.2,downsloping,0,normal,1
+46,Female,atypical angina,105,204,lower then 120mg/ml,ST-T wave abnormality,172,no,0.0,downsloping,0,normal,1
+51,Male,non-anginal pain,94,227,lower then 120mg/ml,ST-T wave abnormality,154,yes,0.0,downsloping,1,reversable defect,1
+52,Female,non-anginal pain,136,196,lower then 120mg/ml,normal,169,no,0.1,flat,0,normal,1
+56,Female,atypical angina,140,294,lower then 120mg/ml,normal,153,no,1.3,flat,0,normal,1
+74,Female,atypical angina,120,269,lower then 120mg/ml,normal,121,yes,0.2,downsloping,1,normal,1
+53,Female,non-anginal pain,128,216,lower then 120mg/ml,normal,115,no,0.0,downsloping,0,0,1
+53,Female,typical angina,130,264,lower then 120mg/ml,normal,143,no,0.4,flat,0,normal,1
+48,Female,non-anginal pain,130,275,lower then 120mg/ml,ST-T wave abnormality,139,no,0.2,downsloping,0,normal,1
+37,Male,non-anginal pain,130,250,lower then 120mg/ml,ST-T wave abnormality,187,no,3.5,upsloping,0,normal,1
+54,Female,non-anginal pain,110,214,lower then 120mg/ml,ST-T wave abnormality,158,no,1.6,flat,0,normal,1
+54,Male,non-anginal pain,125,273,lower then 120mg/ml,normal,152,no,0.5,upsloping,1,normal,1
+65,Female,non-anginal pain,155,269,lower then 120mg/ml,ST-T wave abnormality,148,no,0.8,downsloping,0,normal,1
+52,Male,non-anginal pain,172,199,heigher then 120mg/ml,ST-T wave abnormality,162,no,0.5,downsloping,0,reversable defect,1
+57,Male,typical angina,110,201,lower then 120mg/ml,ST-T wave abnormality,126,yes,1.5,flat,0,fixed defect,1
+46,Female,typical angina,138,243,lower then 120mg/ml,normal,152,yes,0.0,flat,0,normal,1
+62,Male,non-anginal pain,130,231,lower then 120mg/ml,ST-T wave abnormality,146,no,1.8,flat,3,reversable defect,1
+53,Male,non-anginal pain,130,246,heigher then 120mg/ml,normal,173,no,0.0,downsloping,3,normal,1
+58,Male,non-anginal pain,105,240,lower then 120mg/ml,normal,154,yes,0.6,flat,0,reversable defect,1
+51,Male,non-anginal pain,110,175,lower then 120mg/ml,ST-T wave abnormality,123,no,0.6,downsloping,0,normal,1
+46,Female,non-anginal pain,142,177,lower then 120mg/ml,normal,160,yes,1.4,upsloping,0,normal,1
+59,Male,atypical angina,140,221,lower then 120mg/ml,ST-T wave abnormality,164,yes,0.0,downsloping,0,normal,1
+64,Female,typical angina,130,303,lower then 120mg/ml,ST-T wave abnormality,122,no,2.0,flat,2,normal,1
+63,Male,asymptomatic,145,233,heigher then 120mg/ml,normal,150,no,2.3,upsloping,0,fixed defect,1
+70,Male,atypical angina,156,245,lower then 120mg/ml,normal,143,no,0.0,downsloping,0,normal,1
+42,Female,typical angina,102,265,lower then 120mg/ml,normal,122,no,0.6,flat,0,normal,1
+54,Female,non-anginal pain,160,201,lower then 120mg/ml,ST-T wave abnormality,163,no,0.0,downsloping,1,normal,1
+57,Male,non-anginal pain,150,168,lower then 120mg/ml,ST-T wave abnormality,174,no,1.6,downsloping,0,normal,1
+41,Female,non-anginal pain,112,268,lower then 120mg/ml,normal,172,yes,0.0,downsloping,0,normal,1
+47,Male,non-anginal pain,130,253,lower then 120mg/ml,ST-T wave abnormality,179,no,0.0,downsloping,0,normal,1
+49,Female,atypical angina,134,271,lower then 120mg/ml,ST-T wave abnormality,162,no,0.0,flat,0,normal,1
+58,Female,typical angina,130,197,lower then 120mg/ml,ST-T wave abnormality,131,no,0.6,flat,0,normal,1
+41,Male,non-anginal pain,130,214,lower then 120mg/ml,normal,168,no,2.0,flat,0,normal,1
+59,Male,typical angina,135,234,lower then 120mg/ml,ST-T wave abnormality,161,no,0.5,flat,0,reversable defect,1
+54,Male,typical angina,140,239,lower then 120mg/ml,ST-T wave abnormality,160,no,1.2,downsloping,0,normal,1
+58,Male,atypical angina,125,220,lower then 120mg/ml,ST-T wave abnormality,144,no,0.4,flat,4,reversable defect,1
+67,Female,non-anginal pain,152,277,lower then 120mg/ml,ST-T wave abnormality,172,no,0.0,downsloping,1,normal,1
+59,Male,asymptomatic,178,270,lower then 120mg/ml,normal,145,no,4.2,upsloping,0,reversable defect,1
+53,Female,typical angina,138,234,lower then 120mg/ml,normal,160,no,0.0,downsloping,0,normal,1
+50,Female,non-anginal pain,120,219,lower then 120mg/ml,ST-T wave abnormality,158,no,1.6,flat,0,normal,1
+44,Male,non-anginal pain,140,235,lower then 120mg/ml,normal,180,no,0.0,downsloping,0,normal,1
+68,Male,non-anginal pain,118,277,lower then 120mg/ml,ST-T wave abnormality,151,no,1.0,downsloping,1,reversable defect,1
+50,Female,typical angina,110,254,lower then 120mg/ml,normal,159,no,0.0,downsloping,0,normal,1
+54,Female,non-anginal pain,135,304,heigher then 120mg/ml,ST-T wave abnormality,170,no,0.0,downsloping,0,normal,1
+46,Male,atypical angina,101,197,heigher then 120mg/ml,ST-T wave abnormality,156,no,0.0,downsloping,0,reversable defect,1
+55,Male,atypical angina,130,262,lower then 120mg/ml,ST-T wave abnormality,155,no,0.0,downsloping,0,normal,1
+63,Female,atypical angina,140,195,lower then 120mg/ml,ST-T wave abnormality,179,no,0.0,downsloping,2,normal,1
+43,Male,typical angina,115,303,lower then 120mg/ml,ST-T wave abnormality,181,no,1.2,flat,0,normal,1
+69,Female,asymptomatic,140,239,lower then 120mg/ml,ST-T wave abnormality,151,no,1.8,downsloping,2,normal,1
+65,Male,typical angina,120,177,lower then 120mg/ml,ST-T wave abnormality,140,no,0.4,downsloping,0,reversable defect,1
+66,Female,asymptomatic,150,226,lower then 120mg/ml,ST-T wave abnormality,114,no,2.6,upsloping,0,normal,1
+55,Female,atypical angina,135,250,lower then 120mg/ml,normal,161,no,1.4,flat,0,normal,1
+60,Female,non-anginal pain,120,178,heigher then 120mg/ml,ST-T wave abnormality,96,no,0.0,downsloping,0,normal,1
+52,Male,typical angina,108,233,heigher then 120mg/ml,ST-T wave abnormality,147,no,0.1,downsloping,3,reversable defect,1
+68,Female,non-anginal pain,120,211,lower then 120mg/ml,normal,115,no,1.5,flat,0,normal,1
+44,Female,non-anginal pain,108,141,lower then 120mg/ml,ST-T wave abnormality,175,no,0.6,flat,0,normal,1
