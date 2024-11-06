@@ -915,6 +915,139 @@ plt.show()
 
 
 
+12. Best Goal Keeper
+
+
+## Visualize Data
+
+``` python
+
+
+# Filter rows where Position is 'Goalkeeper'
+df = Data.copy()
+goalkeepers = df[df['Position'] == 'GK']
+
+# Goals conceded by goalkeepers playing as the home team
+home_goalkeepers = goalkeepers.merge(df[['MatchID', 'Home Team Goals', 'Away Team Goals', 'Home Team Initials']], 
+                                     left_on=['MatchID', 'Team Initials'], 
+                                     right_on=['MatchID', 'Home Team Initials'], 
+                                     how='inner')
+
+home_goalkeepers['goals_conceded'] = home_goalkeepers['Away Team Goals_y']
+
+# Goals conceded by goalkeepers playing as the away team
+away_goalkeepers = goalkeepers.merge(df[['MatchID', 'Home Team Goals', 'Away Team Goals', 'Away Team Initials']], 
+                                     left_on=['MatchID', 'Team Initials'], 
+                                     right_on=['MatchID', 'Away Team Initials'], 
+                                     how='inner')
+away_goalkeepers['goals_conceded'] = away_goalkeepers['Home Team Goals_y']
+
+# Combine home and away goalkeepers data
+all_goalkeepers = pd.concat([home_goalkeepers, away_goalkeepers])
+
+# Aggregate by goalkeeper to find total goals conceded and number of matches
+goalkeeper_stats = all_goalkeepers.groupby(['Player Name', 'Team Initials']).agg(
+    total_goals_conceded=('goals_conceded', 'sum'),
+    matches_played=('MatchID', 'count')
+).reset_index()
+
+# Calculate goals conceded per match
+goalkeeper_stats['goals_conceded_per_match'] = goalkeeper_stats['total_goals_conceded'] / goalkeeper_stats['matches_played']
+
+best_goalkeepers = goalkeeper_stats.sort_values(by='goals_conceded_per_match').head(10)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(data=best_goalkeepers, x='goals_conceded_per_match', y='Player Name', palette='dark:b')
+plt.title('Top 10 Goalkeepers by Goals Conceded Per Match')
+plt.xlabel('Goals Conceded per Match')
+plt.ylabel('Goalkeeper')
+plt.show()
+
+
+
+```
+
+
+
+## Results
+
+![](image-7.png)
+
+
+
+
+## 13. Observe patterns in winning teams 
+
+## Visualize Data
+
+``` python
+
+
+df = Data.copy()
+
+df['Attendance'] = pd.to_numeric(df['Attendance'], errors='coerce')
+
+# Create a column to check if the host country won
+df['Host_Won'] = df.apply(lambda row: row['Country'] == row['Winner'], axis=1)
+
+# Count the total number of tournaments and the number where the host won
+host_wins = df['Host_Won'].sum()
+total_tournaments = df.shape[0]
+host_win_percentage = (host_wins / total_tournaments) * 100
+
+print(f"Host countries won {host_wins} out of {total_tournaments} tournaments, which is {host_win_percentage:.2f}% of the time.")
+
+# Group by 'Country' (host) to see how many times each host country has won
+host_country_performance = df.groupby('Country')['Host_Won'].sum().reset_index()
+host_country_performance.columns = ['Host Country', 'Wins as Host']
+
+# Calculate winning frequency
+host_country_performance['Winning_Frequency'] = (host_country_performance['Wins as Host'] / total_tournaments) * 100
+
+# Group by 'Country' to get aggregate match outcome stats for host years
+host_match_stats = df.groupby('Country').agg({
+    'GoalsScored': 'mean',
+    'MatchesPlayed': 'mean',
+    'Attendance': 'mean'
+}).reset_index()
+
+host_match_stats.columns = ['Host Country', 'Avg Goals Scored', 'Avg Matches Played', 'Avg Attendance']
+
+# Merge host performance with match outcome stats
+host_performance_data = host_country_performance.merge(host_match_stats, on='Host Country', how='left')
+
+
+# Bar plot for host win frequency
+plt.figure(figsize=(10, 6))
+sns.barplot(data=host_performance_data, x='Host Country', y='Winning_Frequency', palette='Blues')
+plt.title('Winning Frequency of Host Countries')
+plt.xlabel('Host Country')
+plt.ylabel('Winning Frequency (%)')
+plt.xticks(rotation=45)
+plt.show()
+
+# Scatter plot for goals scored vs. attendance for host countries
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=host_performance_data, x='Avg Goals Scored', y='Avg Attendance', hue='Host Country', s=100, palette='viridis')
+plt.title('Goals Scored vs. Attendance for Host Countries')
+plt.xlabel('Average Goals Scored')
+plt.ylabel('Average Attendance')
+plt.legend(title='Host Country', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.show()
+
+
+```
+
+
+## Results
+
+
+![alt text](image-8.png)
+
+![alt text](image-9.png)
+
+
+
 
 
 
