@@ -777,6 +777,141 @@ plt.show()
 
 
 
+## 9. Status To Understand Starting Players vs Substitutes.
+
+## Visualize Data
+
+``` python
+
+
+### find players percentage by line up using pie plot 
+plt.figure(figsize=(8, 6))
+plt.pie(Data['Line-up'].value_counts().values, labels= Data['Line-up'].value_counts().index, autopct= '%0.2f%%',startangle=120)
+plt.title('Distribution of Starting Players vs. Substitutes', fontsize = 15 )
+plt.show()
+
+```
+
+## Results
+
+![alt text](image-3.png)
+
+
+## Insights
+
+1.	Nearly Equal Distribution: The chart shows an almost equal split between starting players (“N”) and substitutes (“S”), with starting players making up 50.36% and substitutes 49.64%.
+
+2.	Minimal Difference: The difference between starting players and substitutes is minimal, less than 1%, indicating balanced usage of both types of players in matches.
+3.	Strategic Flexibility: This near-equal distribution suggests that teams often rely on substitutes nearly as much as starting players, possibly for strategic flexibility during matches.
+
+
+
+## 10. Identify impactful players by analyzing match events and goals.
+
+## Visualize Data
+
+``` python
+
+
+### create a variable top_10_soorer 
+top_10_scorer = Data['Player Name'].value_counts().sort_values(ascending= False).reset_index().head(10)
+##Rename column name
+top_10_scorer.columns = ['Player Name', 'tot_goals']
+
+### Plot visualization
+
+sns.barplot(data= top_10_scorer, x = 'tot_goals', y = 'Player Name')
+plt.title('Top 10 Goal Scorers')
+plt.ylabel('')
+plt.xlabel('Total Goals')
+plt.show()
+
+```
+
+
+## Results
+
+
+![alt text](image-5.png)
+
+## Insights
+
+
+1.	Ronaldo as Top Scorer: Ronaldo has the highest number of goals, leading significantly over others.
+
+2.	Klose in Second Place: Klose follows Ronaldo but with a noticeable gap, showing Ronaldo’s unmatched scoring record.
+
+3.	Close Scoring Range: The remaining players (Cafu, Dida, Sepp Maier, Leao, Oscar, Müller, Wladyslaw Zmuda, and Silva) have similar goal counts, indicating strong competition among them.
+
+4.	Consistency Among Top Players: The close range in goal counts (except for Ronaldo) shows high consistency among top scorers.
+
+
+
+11. Analyze coach impact by examining teams’ performances under different coaches.
+
+
+## Visualize Data
+
+``` python
+
+
+# Create a helper column for match result (win/loss/draw) for each team
+df = Data.copy()
+df['home_team_win'] = df['Home Team Goals'] > df['Away Team Goals']
+df['away_team_win'] = df['Away Team Goals'] > df['Home Team Goals']
+df['draw'] = df['Home Team Goals'] == df['Away Team Goals']
+
+# Home team data
+home_data = df[['Coach Name', 'Home Team Name', 'Home Team Goals', 'Away Team Goals', 'home_team_win', 'draw', 'Year']].copy()
+home_data['team'] = home_data['Home Team Name']
+home_data['goals_scored'] = home_data['Home Team Goals']
+home_data['goals_conceded'] = home_data['Away Team Goals']
+home_data['win'] = home_data['home_team_win']
+
+# Away team data
+away_data = df[['Coach Name', 'Away Team Name', 'Away Team Goals', 'Home Team Goals', 'away_team_win', 'draw', 'Year']].copy()
+away_data['team'] = away_data['Away Team Name']
+away_data['goals_scored'] = away_data['Away Team Goals']
+away_data['goals_conceded'] = away_data['Home Team Goals']
+away_data['win'] = away_data['away_team_win']
+
+# Combine both dataframes
+team_performance = pd.concat([home_data, away_data])
+
+# Aggregate performance metrics for each coach
+coach_performance = team_performance.groupby(['Coach Name', 'team']).agg(
+    win_rate=('win', 'mean'),  # Percentage of wins
+    avg_goals_scored=('goals_scored', 'mean'),
+    avg_goals_conceded=('goals_conceded', 'mean'),
+    total_matches=('win', 'count')
+).reset_index()
+coach_performance['avg_goals_scored'] = coach_performance['avg_goals_scored'].astype(int)
+# Convert win rate to percentage
+coach_performance['win_rate'] = coach_performance['win_rate'] * 100
+
+coach_performance = coach_performance[coach_performance['total_matches'] > 5]  # Example threshold
+
+coach_performance = coach_performance[coach_performance['win_rate'] == 100].sort_values(by = 'avg_goals_scored', ascending= False).head(10)
+
+top_coaches = coach_performance.sort_values(by='win_rate', ascending=False).head(10)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(data=top_coaches, x='avg_goals_scored', y='Coach Name', palette= 'dark:b')
+plt.title('Top 10 Coaches With Win Rate(100%) And Avg Goals Per Match')
+plt.xlabel('Win Rate (%)')
+plt.ylabel('')
+plt.show()
+
+
+```
+
+## Results 
+
+![alt text](image-6.png)
+
+
+## Insights
+
 
 
 
