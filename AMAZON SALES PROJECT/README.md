@@ -573,7 +573,7 @@ plt.show()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    
 </head>
 <body>
     <h2>Sales by Region</h2>
@@ -645,7 +645,7 @@ plt.show()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales by Sales Channel</title>
+    
 </head>
 <body>
     <h2>Sales by Sales Channel</h2>
@@ -695,7 +695,7 @@ plt.show()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales by Order Priority</title>
+    
 </head>
 <body>
     <h2>Sales by Order Priority</h2>
@@ -792,7 +792,7 @@ plt.show()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Correlation Matrix</title>
+    
 </head>
 <body>
     <h1>Correlation Matrix</h1>
@@ -934,7 +934,7 @@ plt.show()
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outliers Detected in Sales Data</title>
+   
 </head>
 <body>
     <h2>Outliers Detected in Sales Data</h2>
